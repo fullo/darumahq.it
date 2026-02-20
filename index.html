@@ -3,19 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daruma Consulting | Mentoring, Consulenza e Fractional Management</title>
-  <meta name="description" content="Daruma Consulting - Business Design, Innovation Management, OKR e formazione. Approccio olistico e pratico per team e organizzazioni.">
+  <title>Daruma Consulting | Business Design, Sostenibilit&agrave; e Formazione</title>
+  <meta name="description" content="Daruma Consulting accompagna imprese e organizzazioni nel percorso dall'idea ai risultati, attraverso business design, sostenibilit&agrave; e formazione.">
   <meta name="author" content="Francesco Fullone">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Daruma Consulting | Mentoring, Consulenza e Fractional Management">
-  <meta property="og:description" content="Business Design, Innovation Management, OKR e formazione con un approccio olistico e pratico.">
+  <meta property="og:title" content="Daruma Consulting | Business Design, Sostenibilit&agrave; e Formazione">
+  <meta property="og:description" content="Dall'idea ai risultati. Business design, sostenibilit&agrave; e formazione con un approccio pratico, iterativo e basato sull'esperienza.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://darumahq.it">
   <meta property="og:locale" content="it_IT">
 
   <!-- Favicon -->
-  <link rel="icon" href="img/daruma-icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/daruma-icon.png" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,17 +30,18 @@
   <nav class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#" class="nav__logo">
-        <img src="img/daruma-icon.svg" alt="Daruma" class="nav__logo-img"> daruma
+        <img src="img/daruma-icon.png" alt="Daruma" class="nav__logo-img"> daruma
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="navLinks">
+        <li><a href="#filosofia">Filosofia</a></li>
         <li><a href="#servizi">Servizi</a></li>
-        <li><a href="#approccio">Approccio</a></li>
-        <li><a href="#competenze">Competenze</a></li>
-        <li><a href="#risorse">Risorse</a></li>
-        <li><a href="#contatti" class="btn btn--small">Contatti</a></li>
+        <li><a href="#collaborare">Collaborare</a></li>
+        <li><a href="#chi-sono">Chi siamo</a></li>
+        <li><a href="#clienti">Clienti</a></li>
+        <li><a href="#contatti" class="btn btn--small">Parliamone</a></li>
       </ul>
     </div>
   </nav>
@@ -44,176 +50,271 @@
   <header class="hero" id="hero">
     <div class="container hero__inner">
       <div class="hero__content">
-        <p class="hero__eyebrow">Mentoring &middot; Consulenza &middot; Fractional Management</p>
-        <h1 class="hero__title">Trasformiamo le idee in <em>impatto concreto</em></h1>
+        <h1 class="hero__title">Un obiettivo. Un metodo.<br><em>Risultati concreti.</em></h1>
         <p class="hero__subtitle">
-          Business design, innovation management e OKR con un approccio olistico e pratico.
-          Affianchiamo team e organizzazioni nel percorso di crescita e trasformazione.
+          Daruma accompagna imprese e organizzazioni nel percorso dall'idea ai risultati,
+          attraverso business design, sostenibilit&agrave; e formazione.
+          Con un approccio pratico, iterativo e basato sull'esperienza.
         </p>
+        <p class="hero__tagline">Dipingi il primo occhio. Noi ti aiutiamo a completare il secondo.</p>
         <div class="hero__actions">
           <a href="#contatti" class="btn btn--primary">Parliamone</a>
           <a href="#servizi" class="btn btn--outline">Scopri i servizi</a>
         </div>
       </div>
       <div class="hero__visual">
-        <img src="img/daruma-logo.svg" alt="Daruma Consulting" class="hero__logo">
+        <img src="img/daruma-logo.png" alt="Daruma Consulting" class="hero__logo">
       </div>
     </div>
   </header>
 
+  <!-- Filosofia -->
+  <section class="section section--alt" id="filosofia">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Perch&eacute; &ldquo;Daruma&rdquo;</h2>
+      </div>
+      <div class="filosofia">
+        <div class="filosofia__content">
+          <p class="filosofia__lead">
+            Nella tradizione giapponese, il Daruma &egrave; una bambola portafortuna.
+            Si dipinge il primo occhio quando si fissa un obiettivo.
+            Il secondo si completa solo quando l'obiettivo &egrave; raggiunto.
+          </p>
+          <p class="filosofia__text">
+            Daruma Consulting nasce da questa idea: ogni collaborazione inizia con un obiettivo
+            chiaro e termina con un risultato misurabile. Nel mezzo, c'&egrave; metodo, esperienza
+            e un lavoro fianco a fianco con chi quell'obiettivo lo deve raggiungere davvero.
+          </p>
+          <p class="filosofia__text">
+            Non vendiamo soluzioni preconfezionate. Lavoriamo insieme &mdash; con le giuste domande,
+            gli strumenti adatti e il tempo necessario &mdash; per trovare le risposte giuste.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Come lavoriamo — I tre pilastri -->
+  <section class="section" id="pilastri">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Come lavoriamo</h2>
+        <p class="section__subtitle">I tre pilastri</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3 class="pillar__title">Desiderabilit&agrave;</h3>
+          <p class="pillar__label">Persone al centro</p>
+          <p class="pillar__text">
+            Analizziamo le competenze interne, ascoltiamo gli utenti e progettiamo
+            soluzioni che le persone vogliono effettivamente usare.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="pillar__title">Fattibilit&agrave;</h3>
+          <p class="pillar__label">Tecnologie che funzionano</p>
+          <p class="pillar__text">
+            Iteriamo attraverso ricerca, prototipazione e validazione tecnica.
+            Niente promesse su slide: solo ci&ograve; che si pu&ograve; costruire e far funzionare.
+          </p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="pillar__title">Sostenibilit&agrave;</h3>
+          <p class="pillar__label">Business che dura</p>
+          <p class="pillar__text">
+            Definiamo strategie operative per creare valore nel tempo,
+            bilanciando risultati economici con responsabilit&agrave; ambientale e sociale.
+          </p>
+        </div>
+      </div>
+      <p class="pillars__footer">
+        Il nostro processo &egrave; incrementale e iterativo. Interventi brevi, replicabili e focalizzati
+        su obiettivi specifici. Risultati concreti con investimenti contenuti e tempi certi.
+      </p>
+    </div>
+  </section>
+
   <!-- Servizi -->
-  <section class="section" id="servizi">
+  <section class="section section--alt" id="servizi">
     <div class="container">
       <div class="section__header">
         <h2 class="section__title">Servizi</h2>
-        <p class="section__subtitle">Tre modalit&agrave; di collaborazione per esigenze diverse</p>
+      </div>
+
+      <!-- Business Design -->
+      <div class="service" id="business-design">
+        <div class="service__header">
+          <h3 class="service__title">Business Design</h3>
+          <p class="service__intro">
+            Dall'idea alla validazione del modello di business. Daruma affianca imprenditori e team
+            nella definizione della proposta di valore, nella progettazione di esperimenti per validarla
+            e nell'identificazione di nuove opportunit&agrave; di mercato.
+          </p>
+        </div>
+        <div class="service__details">
+          <div class="service__what">
+            <h4>Cosa facciamo in pratica</h4>
+            <ul>
+              <li>Facilitazione di attivit&agrave; di Design Thinking</li>
+              <li>Discovery tecniche e studi di fattibilit&agrave; per progetti digitali</li>
+              <li>Definizione e validazione di Business Model e Business Plan</li>
+              <li>Creazione di cultura aziendale, principi guida e processi di collaborazione</li>
+              <li>Supporto alla preparazione di pitch per investitori</li>
+            </ul>
+          </div>
+          <div class="service__tools">
+            <h4>Strumenti</h4>
+            <p>Business Model Canvas, Lean Canvas, Value Proposition Canvas, PESTEL, SWOT, 5 Forze di Porter.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sustainability Design -->
+      <div class="service" id="sustainability-design">
+        <div class="service__header">
+          <h3 class="service__title">Sustainability Design</h3>
+          <p class="service__intro">
+            La sostenibilit&agrave; non &egrave; un reparto: &egrave; un modo di progettare il business.
+            Daruma aiuta le organizzazioni a integrare pratiche sostenibili &mdash; ambientali, sociali
+            ed economiche &mdash; nei processi esistenti, senza stravolgimenti ma con impatto reale.
+          </p>
+        </div>
+        <div class="service__details">
+          <div class="service__what">
+            <h4>Cosa facciamo in pratica</h4>
+            <ul>
+              <li>Facilitazione di attivit&agrave; di Sustainability Design</li>
+              <li>Affiancamento a progetti di Life Cycle Assessment e redesign di prodotti e servizi</li>
+              <li>Supporto ad attivit&agrave; di Open Innovation e processi di Economia Circolare</li>
+              <li>Definizione di Business Model orientati a pratiche green</li>
+              <li>Sustainable IT e Green Software: standard W3C, Green Software Foundation, Software Carbon Intensity</li>
+            </ul>
+          </div>
+          <div class="service__target">
+            <h4>Per chi</h4>
+            <p>Aziende che vogliono andare oltre il greenwashing e costruire un percorso di sostenibilit&agrave; concreto e misurabile.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- OKR -->
+      <div class="service" id="okr">
+        <div class="service__header">
+          <h3 class="service__title">OKR &amp; Performance Management</h3>
+          <p class="service__intro">
+            Il 70% delle implementazioni OKR fallisce. Le cause sono quasi sempre le stesse:
+            confondere output con outcome, mascherare task da Key Results, lavorare senza allineamento strategico.
+          </p>
+          <p class="service__intro">
+            Daruma propone un metodo diverso, basato su esperienza, riflessione e scoperta &mdash;
+            ispirato ai principi del &ldquo;Training from the Back of the Room&rdquo; di Sharon Bowman.
+          </p>
+        </div>
+        <div class="service__details">
+          <div class="service__what">
+            <h4>Cosa offriamo</h4>
+            <ul>
+              <li>Corso OKR intensivo (16 ore, 60% pratica e 40% teoria) con simulazione d'impresa reale</li>
+              <li>Il libro &ldquo;OKR The Right Way&rdquo; &mdash; 200 pagine di percorso guidato con il 70% di esercizi pratici e il caso studio Karma Inc.</li>
+              <li>Framework della Causalit&agrave;: il cuore del metodo, applicabile da subito</li>
+            </ul>
+          </div>
+          <div class="service__highlight">
+            <p><strong>Il segreto &egrave; la causalit&agrave;.</strong> Ogni Objective &egrave; un effetto desiderato. Ogni Key Result &egrave; la causa scatenante, misurabile e verificabile.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formazione -->
+      <div class="service" id="formazione">
+        <div class="service__header">
+          <h3 class="service__title">Formazione Innovativa</h3>
+          <p class="service__intro">
+            I corsi di Daruma non sono lezioni frontali. Sono esperienze progettate per far emergere
+            competenze attraverso la pratica, il confronto e la riflessione di gruppo.
+            Ogni percorso &egrave; personalizzabile nella durata e nei contenuti.
+          </p>
+        </div>
+        <div class="service__details">
+          <div class="training-areas">
+            <div class="training-area">
+              <h4>Innovazione</h4>
+              <ul>
+                <li>Innovation Management Primer (da 16h) &mdash; ISO 56002, leadership, pianificazione</li>
+                <li>Business Design &amp; Design Thinking (da 16h) &mdash; strumenti di progettazione</li>
+                <li>Lean Startup Primer (8h) &mdash; validazione di idee e progetti</li>
+              </ul>
+            </div>
+            <div class="training-area">
+              <h4>Sostenibilit&agrave;</h4>
+              <ul>
+                <li>Sustainability Primer (16h) &mdash; cambiamento climatico, SDGs, rendicontazione</li>
+                <li>Sustainable Design &amp; LCA (da 8h a 16h) &mdash; Life Cycle Assessment</li>
+                <li>Sustainable IT (da 8h) &mdash; Green IT, standard W3C, Green Software Foundation</li>
+              </ul>
+            </div>
+            <div class="training-area">
+              <h4>Agile Management</h4>
+              <ul>
+                <li>OKR come pratica di management (16h) &mdash; con business case in aula</li>
+                <li>Smart Working &amp; Decision Making (16h) &mdash; decision making partecipativo</li>
+                <li>Portfolio Management per digital agency (8h) &mdash; Kanban, Capacity Canvas</li>
+              </ul>
+            </div>
+          </div>
+          <p class="service__note">Tutti i corsi includono: esercitazioni di gruppo, strumenti collaborativi (Miro, canvas di design thinking), materiali e follow-up.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Come collaborare -->
+  <section class="section" id="collaborare">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Come collaborare</h2>
+        <p class="section__subtitle">Tre modalit&agrave;, una filosofia: lavorare insieme con obiettivi chiari e risultati misurabili.</p>
       </div>
       <div class="grid grid--3">
-
-        <div class="card">
-          <div class="card__icon">
+        <div class="collab-card">
+          <div class="collab-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="card__title">Mentoring</h3>
-          <p class="card__text">
-            Percorsi di crescita personalizzati per founder, manager e team.
-            Supporto continuo per sviluppare competenze e prendere decisioni strategiche con maggiore consapevolezza.
+          <h3 class="collab-card__title">Mentoring a chiamata</h3>
+          <p class="collab-card__text">
+            Per confronti rapidi, anche non pianificati. Valutazioni, scelte strategiche,
+            feedback su idee e processi.
           </p>
-          <ul class="card__list">
-            <li>Sessioni 1:1 e di gruppo</li>
-            <li>Sviluppo leadership</li>
-            <li>Crescita professionale</li>
-          </ul>
         </div>
-
-        <div class="card card--featured">
-          <div class="card__icon">
+        <div class="collab-card collab-card--featured">
+          <div class="collab-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
           </div>
-          <h3 class="card__title">Consulenza</h3>
-          <p class="card__text">
-            Analisi, strategia e implementazione. Dall'ideazione al go-to-market,
-            supporto concreto per validare modelli di business, definire strategie di innovazione e strutturare processi efficaci.
+          <h3 class="collab-card__title">Consulenza e Formazione</h3>
+          <p class="collab-card__text">
+            Riprogettazione del modello di business, sessioni formative su misura,
+            attivit&agrave; di design thinking studiate sulle esigenze del team.
           </p>
-          <ul class="card__list">
-            <li>Business design &amp; strategy</li>
-            <li>Innovation management</li>
-            <li>OKR &amp; performance</li>
-          </ul>
         </div>
-
-        <div class="card">
-          <div class="card__icon">
+        <div class="collab-card">
+          <div class="collab-card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h3 class="card__title">Fractional Management</h3>
-          <p class="card__text">
-            Competenze C-level senza l'impegno di un'assunzione full-time.
-            Interveniamo come CTO, CPO o Head of Innovation part-time, integrandoci nel team e portando risultati misurabili.
-          </p>
-          <ul class="card__list">
-            <li>Fractional CTO / CPO</li>
-            <li>Interim management</li>
-            <li>Governance &amp; scaling</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Approccio -->
-  <section class="section section--alt" id="approccio">
-    <div class="container">
-      <div class="section__header">
-        <h2 class="section__title">Approccio</h2>
-        <p class="section__subtitle">Olistico, pratico, orientato ai risultati</p>
-      </div>
-      <div class="approach">
-        <div class="approach__item">
-          <span class="approach__number">01</span>
-          <h3 class="approach__title">Ascolto e comprensione</h3>
-          <p class="approach__text">
-            Partiamo dal contesto. Ogni organizzazione ha la sua storia, cultura e sfide uniche.
-            Analizziamo in profondit&agrave; prima di proporre soluzioni.
-          </p>
-        </div>
-        <div class="approach__item">
-          <span class="approach__number">02</span>
-          <h3 class="approach__title">Co-design e strategia</h3>
-          <p class="approach__text">
-            Lavoriamo insieme per disegnare soluzioni su misura.
-            Usiamo framework collaudati &mdash; business model canvas, lean startup, OKR &mdash; adattandoli al contesto reale.
-          </p>
-        </div>
-        <div class="approach__item">
-          <span class="approach__number">03</span>
-          <h3 class="approach__title">Affiancamento operativo</h3>
-          <p class="approach__text">
-            Non ci limitiamo a consigliare: lavoriamo fianco a fianco con il team.
-            Formazione, coaching e supporto continuo fino all'autonomia.
-          </p>
-        </div>
-        <div class="approach__item">
-          <span class="approach__number">04</span>
-          <h3 class="approach__title">Misurazione e iterazione</h3>
-          <p class="approach__text">
-            Definiamo metriche chiare fin dall'inizio.
-            Misuriamo i risultati, iteriamo e miglioriamo continuamente.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Competenze -->
-  <section class="section" id="competenze">
-    <div class="container">
-      <div class="section__header">
-        <h2 class="section__title">Competenze</h2>
-        <p class="section__subtitle">Anni di esperienza trasversale tra business, tecnologia e persone</p>
-      </div>
-      <div class="grid grid--2">
-        <div class="competence">
-          <h3 class="competence__title">Business Design</h3>
-          <p class="competence__text">
-            Modellazione e validazione di business model, value proposition design,
-            lean startup e go-to-market strategy.
-          </p>
-        </div>
-        <div class="competence">
-          <h3 class="competence__title">Innovation Management</h3>
-          <p class="competence__text">
-            Processi di innovazione strutturati, gestione del portfolio innovazione,
-            open innovation e corporate entrepreneurship.
-          </p>
-        </div>
-        <div class="competence">
-          <h3 class="competence__title">OKR &amp; Goal Setting</h3>
-          <p class="competence__text">
-            Implementazione di framework OKR, allineamento strategico,
-            definizione di metriche e cicli di review.
-          </p>
-        </div>
-        <div class="competence">
-          <h3 class="competence__title">Formazione &amp; Coaching</h3>
-          <p class="competence__text">
-            Workshop, training e percorsi di formazione per team multidisciplinari.
-            Sviluppo competenze e cultura dell'innovazione.
-          </p>
-        </div>
-        <div class="competence">
-          <h3 class="competence__title">Sustainable IT</h3>
-          <p class="competence__text">
-            Sostenibilit&agrave; digitale, green software, misurazione dell'impatto ambientale
-            delle tecnologie e pratiche di sviluppo responsabile.
-          </p>
-        </div>
-        <div class="competence">
-          <h3 class="competence__title">Community &amp; Open Source</h3>
-          <p class="competence__text">
-            Costruzione e gestione di comunit&agrave; tecniche,
-            contributi open source, organizzazione eventi e conferenze.
+          <h3 class="collab-card__title">Advisoring &amp; Fractional</h3>
+          <p class="collab-card__text">
+            Affiancamento continuativo nella definizione di obiettivi e piani operativi.
+            Supporto a decisioni strategiche, budget e piani di trasformazione.
           </p>
         </div>
       </div>
@@ -223,23 +324,40 @@
   <!-- Chi sono -->
   <section class="section section--alt" id="chi-sono">
     <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Chi c'&egrave; dietro Daruma</h2>
+      </div>
       <div class="about">
+        <div class="about__photo">
+          <img src="img/francesco-fullone.jpg" alt="Francesco Fullone" class="about__img">
+        </div>
         <div class="about__content">
-          <h2 class="section__title">Francesco Fullone</h2>
-          <p class="about__role">Founder &amp; Principal Consultant</p>
+          <h3 class="about__name">Francesco Fullone</h3>
+          <p class="about__role">Fondatore</p>
           <p class="about__text">
-            Imprenditore, consulente e mentore con esperienza pluriennale nell'intersezione
-            tra business, tecnologia e persone. Autore di libri su sostenibilit&agrave; IT e
-            metodologie di lavoro, speaker e organizzatore di conferenze internazionali.
+            Business and Sustainability Designer, consulente, mentor e investitore in aziende
+            tecnologiche con focus su sostenibilit&agrave; e impatto sociale.
           </p>
           <p class="about__text">
-            Credo che le organizzazioni migliori nascano dalla combinazione di visione strategica,
-            esecuzione disciplinata e attenzione genuina alle persone.
+            Da oltre 15 anni affianca imprese di ogni dimensione nella definizione della proposta
+            di valore, nella validazione del modello di business e nell'organizzazione dei processi
+            per raggiungere i propri obiettivi.
+          </p>
+          <p class="about__text">
+            Direttore e mentor in percorsi di accelerazione, docente e ricercatore in ambito
+            di sostenibilit&agrave;, imprenditore e manager di startup tecnologiche con forte imprinting agile.
+          </p>
+          <p class="about__text">
+            Autore di &ldquo;OKR The Right Way&rdquo;, &ldquo;KPI The Right Way&rdquo; e &ldquo;Sustainable IT: The Practical Way&rdquo;.
           </p>
           <div class="about__links">
             <a href="https://linkedin.com/in/fullo" target="_blank" rel="noopener" class="about__link">
               <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               LinkedIn
+            </a>
+            <a href="https://fullo.net" target="_blank" rel="noopener" class="about__link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Blog
             </a>
             <a href="https://leanpub.com/u/fullo" target="_blank" rel="noopener" class="about__link">
               <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5zM8 12h8v1.5H8V12zm0 3h8v1.5H8V15zm0 3h5v1.5H8V18z"/></svg>
@@ -251,55 +369,61 @@
     </div>
   </section>
 
-  <!-- Risorse / Ecosystem -->
-  <section class="section" id="risorse">
+  <!-- In buona compagnia -->
+  <section class="section" id="clienti">
     <div class="container">
       <div class="section__header">
-        <h2 class="section__title">Ecosistema</h2>
-        <p class="section__subtitle">Progetti e risorse collegati</p>
+        <h2 class="section__title">In buona compagnia</h2>
+        <p class="section__subtitle">Non esiste il &ldquo;troppo piccolo&rdquo; o il &ldquo;troppo grande&rdquo;. Esiste il progetto giusto.</p>
       </div>
-      <div class="grid grid--3">
-
-        <a href="https://kodamahq.it" target="_blank" rel="noopener" class="resource-card">
-          <h3 class="resource-card__title">Kodama HQ</h3>
-          <p class="resource-card__text">
-            Un sotto-brand dedicato a progetti specifici di innovazione e sviluppo tecnologico.
-          </p>
-          <span class="resource-card__link">kodamahq.it &rarr;</span>
-        </a>
-
-        <a href="https://sustainableit.it" target="_blank" rel="noopener" class="resource-card">
-          <h3 class="resource-card__title">Sustainable IT</h3>
-          <p class="resource-card__text">
-            Il libro sulla sostenibilit&agrave; nel mondo IT. Pratiche, strumenti e strategie per un digitale pi&ugrave; responsabile.
-          </p>
-          <span class="resource-card__link">sustainableit.it &rarr;</span>
-        </a>
-
-        <a href="https://leanpub.com/u/fullo" target="_blank" rel="noopener" class="resource-card">
-          <h3 class="resource-card__title">Pubblicazioni</h3>
-          <p class="resource-card__text">
-            Tutti i libri e le pubblicazioni su Leanpub: metodologie, business design e tecnologia sostenibile.
-          </p>
-          <span class="resource-card__link">leanpub.com &rarr;</span>
-        </a>
-
+      <div class="clients">
+        <span class="client">Apropos</span>
+        <span class="client">Artimondo</span>
+        <span class="client">Calciomercato.com</span>
+        <span class="client">Carimali</span>
+        <span class="client">Clobot</span>
+        <span class="client">Datdup</span>
+        <span class="client">Easy Welfare</span>
+        <span class="client">Founder Institute</span>
+        <span class="client">Fond. Banca del Monte di Faenza</span>
+        <span class="client">Gruner+Jahr</span>
+        <span class="client">Grusp</span>
+        <span class="client">HarperCollins</span>
+        <span class="client">il Giornale</span>
+        <span class="client">Inter</span>
+        <span class="client">Jeep</span>
+        <span class="client">Mondadori</span>
+        <span class="client">Monrif Group</span>
+        <span class="client">MotorK</span>
+        <span class="client">Oltretata</span>
+        <span class="client">Palco</span>
+        <span class="client">Scouting Capital Advisory</span>
+        <span class="client">Soisy</span>
+        <span class="client">Sighup</span>
+        <span class="client">Tag</span>
+        <span class="client">Tangible</span>
+        <span class="client">Wishraiser</span>
+        <span class="client">Yerp</span>
+        <span class="client">Gatto Antico</span>
       </div>
     </div>
   </section>
 
-  <!-- Contatti -->
+  <!-- CTA Finale -->
   <section class="section section--dark" id="contatti">
     <div class="container">
       <div class="contact">
-        <h2 class="section__title">Iniziamo a parlare</h2>
+        <h2 class="section__title">Hai un obiettivo?</h2>
         <p class="contact__text">
-          Hai un progetto, un'idea o una sfida organizzativa?<br>
-          Raccontaci la tua situazione e troviamo insieme la strada migliore.
+          Ogni Daruma inizia con un solo occhio: il momento in cui decidi cosa vuoi raggiungere.<br>
+          Il secondo occhio arriva quando ci arrivi davvero.
+        </p>
+        <p class="contact__text">
+          Raccontaci il tuo obiettivo. Troviamo insieme il percorso per completarlo.
         </p>
         <div class="contact__methods">
-          <a href="mailto:info@darumahq.it" class="btn btn--primary btn--large">
-            Scrivici: info@darumahq.it
+          <a href="mailto:francesco@darumahq.it" class="btn btn--primary btn--large">
+            Parliamone
           </a>
           <a href="https://linkedin.com/in/fullo" target="_blank" rel="noopener" class="btn btn--outline btn--large">
             Connettiti su LinkedIn
@@ -313,13 +437,17 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="img/daruma-icon.svg" alt="Daruma" class="footer__logo-img"> daruma consulting
+        <img src="img/daruma-icon.png" alt="Daruma" class="footer__logo-img"> daruma consulting
+      </div>
+      <div class="footer__contact">
+        <a href="mailto:francesco@darumahq.it">francesco@darumahq.it</a>
+        <a href="tel:+393791757353">+39 379 175 7353</a>
       </div>
       <div class="footer__links">
-        <a href="https://kodamahq.it" target="_blank" rel="noopener">Kodama HQ</a>
-        <a href="https://sustainableit.it" target="_blank" rel="noopener">Sustainable IT</a>
-        <a href="https://leanpub.com/u/fullo" target="_blank" rel="noopener">Libri</a>
+        <a href="https://darumahq.it">darumahq.it</a>
+        <a href="https://fullo.net" target="_blank" rel="noopener">fullo.net</a>
         <a href="https://linkedin.com/in/fullo" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leanpub.com/u/fullo" target="_blank" rel="noopener">Libri</a>
       </div>
       <p class="footer__copy">&copy; 2026 Daruma Consulting &mdash; Francesco Fullone. P.IVA: indicare qui</p>
     </div>

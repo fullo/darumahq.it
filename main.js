@@ -36,7 +36,7 @@
 
   // --- Smooth reveal on scroll ---
   var revealElements = document.querySelectorAll(
-    '.card, .approach__item, .competence, .resource-card, .about'
+    '.pillar, .service, .collab-card, .about, .client, .filosofia'
   );
 
   if ('IntersectionObserver' in window) {
