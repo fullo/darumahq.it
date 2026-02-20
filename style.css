@@ -20,9 +20,9 @@
   --c-dark-surface: #222222;
   --c-text: #2d2d2d;
   --c-text-light: #6b6b6b;
-  --c-accent: #c0392b;
-  --c-accent-dark: #a93226;
-  --c-accent-light: #e8d5d2;
+  --c-accent: #e52520;
+  --c-accent-dark: #c91e1a;
+  --c-accent-light: #fce8e7;
   --c-border: #e5e5e0;
 
   /* Typography */
@@ -174,10 +174,14 @@ h3 { font-size: 1.2rem; }
   gap: 0.4rem;
 }
 
-.nav__logo-icon {
-  color: var(--c-accent);
-  font-size: 1.6rem;
-  line-height: 1;
+.nav__logo-img {
+  width: 36px;
+  height: auto;
+}
+
+.footer__logo-img {
+  width: 28px;
+  height: auto;
 }
 
 .nav__links {
@@ -264,57 +268,18 @@ h3 { font-size: 1.2rem; }
   flex-wrap: wrap;
 }
 
-/* Daruma figure (CSS illustration) */
+/* Hero logo */
 .hero__visual {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.daruma-figure__body {
-  width: 240px;
-  height: 280px;
-  background: var(--c-accent);
-  border-radius: 50% 50% 48% 48% / 55% 55% 45% 45%;
-  position: relative;
-  box-shadow:
-    inset 0 -20px 40px rgba(0,0,0,0.15),
-    0 20px 60px rgba(192, 57, 43, 0.2);
+.hero__logo {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
   animation: daruma-idle 4s ease-in-out infinite;
-}
-
-.daruma-figure__face {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160px;
-  height: 130px;
-  background: #f5e6d3;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 36px;
-}
-
-.daruma-figure__eye {
-  width: 28px;
-  height: 28px;
-  background: var(--c-dark);
-  border-radius: 50%;
-  position: relative;
-}
-
-.daruma-figure__eye::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  border-radius: 50%;
 }
 
 @keyframes daruma-idle {
@@ -678,20 +643,8 @@ h3 { font-size: 1.2rem; }
     order: -1;
   }
 
-  .daruma-figure__body {
-    width: 160px;
-    height: 190px;
-  }
-
-  .daruma-figure__face {
-    width: 110px;
-    height: 90px;
-    gap: 24px;
-  }
-
-  .daruma-figure__eye {
-    width: 20px;
-    height: 20px;
+  .hero__logo {
+    max-width: 280px;
   }
 
   .grid--3 {
