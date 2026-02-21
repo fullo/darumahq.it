@@ -209,6 +209,14 @@ h3 { font-size: 1.3rem; }
   color: var(--c-dark);
 }
 
+.nav__links .btn--primary {
+  color: #fff;
+}
+
+.nav__links .btn--primary:hover {
+  color: #fff;
+}
+
 .nav__toggle {
   display: none;
   background: none;
