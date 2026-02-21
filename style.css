@@ -210,10 +210,14 @@ h3 { font-size: 1.3rem; }
 }
 
 .nav__links .btn--primary {
+  background: var(--c-accent-dark);
+  border-color: var(--c-accent-dark);
   color: #fff;
 }
 
 .nav__links .btn--primary:hover {
+  background: #b01a16;
+  border-color: #b01a16;
   color: #fff;
 }
 
