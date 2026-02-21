@@ -503,12 +503,30 @@ h3 { font-size: 1.3rem; }
   background: var(--c-accent-light);
   border-radius: var(--radius);
   padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .service__highlight p {
   color: var(--c-text);
   font-size: 0.95rem;
   line-height: 1.65;
+}
+
+.service__highlight p + p {
+  margin-top: var(--space-xs);
+}
+
+.service__highlight .btn {
+  margin-top: var(--space-md);
+  align-self: center;
+}
+
+.service__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
 }
 
 .service__note {
@@ -521,8 +539,16 @@ h3 { font-size: 1.3rem; }
 }
 
 .service__details .service__highlight {
+  margin-top: 0;
+}
+
+/* Formazione: 3 colonne + highlight full-width sotto */
+#formazione .service__details {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#formazione .service__highlight {
   grid-column: 1 / -1;
-  margin-top: var(--space-sm);
 }
 
 .service__cta {
@@ -611,6 +637,11 @@ h3 { font-size: 1.3rem; }
 .collab-card__text {
   color: var(--c-text-light);
   line-height: 1.85;
+}
+
+.collab-cta {
+  text-align: center;
+  margin-top: var(--space-lg);
 }
 
 /* --- About --- */
@@ -710,9 +741,10 @@ h3 { font-size: 1.3rem; }
 
 /* --- Contact --- */
 .contact {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
   padding: var(--space-lg) 0;
 }
 
@@ -723,10 +755,23 @@ h3 { font-size: 1.3rem; }
   line-height: 1.85;
 }
 
+.contact__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__logo {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  animation: daruma-idle 4s ease-in-out infinite;
+}
+
 .contact__methods {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
 }
@@ -851,7 +896,8 @@ h3 { font-size: 1.3rem; }
     grid-template-columns: 1fr;
   }
 
-  .service__details {
+  .service__details,
+  #formazione .service__details {
     grid-template-columns: 1fr;
   }
 
@@ -937,8 +983,22 @@ h3 { font-size: 1.3rem; }
     font-size: 0.95rem;
   }
 
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact__visual {
+    order: -1;
+  }
+
+  .contact__logo {
+    max-width: 200px;
+  }
+
   .contact__methods {
     width: 100%;
+    align-items: center;
   }
 
   .contact__methods .btn {
