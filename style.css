@@ -459,6 +459,19 @@ h3 { font-size: 1.3rem; }
   margin-bottom: var(--space-md);
 }
 
+.book-covers {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.book-covers img {
+  height: 160px;
+  width: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
 .service__details {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -878,6 +891,10 @@ h3 { font-size: 1.3rem; }
    ============================================ */
 
 @media (max-width: 900px) {
+  .book-covers {
+    display: none;
+  }
+
   .hero__inner {
     grid-template-columns: 1fr;
     text-align: center;
