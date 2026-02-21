@@ -520,7 +520,7 @@ h3 { font-size: 1.3rem; }
 
 .service__highlight .btn {
   margin-top: var(--space-md);
-  align-self: flex-start;
+  align-self: center;
 }
 
 .service__info {
