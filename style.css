@@ -741,9 +741,10 @@ h3 { font-size: 1.3rem; }
 
 /* --- Contact --- */
 .contact {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
   padding: var(--space-lg) 0;
 }
 
@@ -754,10 +755,23 @@ h3 { font-size: 1.3rem; }
   line-height: 1.85;
 }
 
+.contact__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__logo {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  animation: daruma-idle 4s ease-in-out infinite;
+}
+
 .contact__methods {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
 }
@@ -969,8 +983,22 @@ h3 { font-size: 1.3rem; }
     font-size: 0.95rem;
   }
 
+  .contact {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact__visual {
+    order: -1;
+  }
+
+  .contact__logo {
+    max-width: 200px;
+  }
+
   .contact__methods {
     width: 100%;
+    align-items: center;
   }
 
   .contact__methods .btn {
