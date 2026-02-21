@@ -639,6 +639,11 @@ h3 { font-size: 1.3rem; }
   line-height: 1.85;
 }
 
+.collab-cta {
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
 /* --- About --- */
 .about {
   max-width: 800px;
