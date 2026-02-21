@@ -503,12 +503,34 @@ h3 { font-size: 1.3rem; }
   background: var(--c-accent-light);
   border-radius: var(--radius);
   padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .service__highlight p {
   color: var(--c-text);
   font-size: 0.95rem;
   line-height: 1.65;
+}
+
+.service__highlight p + p {
+  margin-top: var(--space-xs);
+}
+
+.service__highlight .btn {
+  margin-top: var(--space-md);
+  align-self: flex-start;
+}
+
+.service__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.service__info .training-areas {
+  grid-template-columns: 1fr;
 }
 
 .service__note {
@@ -521,8 +543,7 @@ h3 { font-size: 1.3rem; }
 }
 
 .service__details .service__highlight {
-  grid-column: 1 / -1;
-  margin-top: var(--space-sm);
+  margin-top: 0;
 }
 
 .service__cta {
