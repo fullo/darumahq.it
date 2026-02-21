@@ -529,10 +529,6 @@ h3 { font-size: 1.3rem; }
   gap: var(--space-md);
 }
 
-.service__info .training-areas {
-  grid-template-columns: 1fr;
-}
-
 .service__note {
   margin-top: var(--space-md);
   padding-top: var(--space-md);
@@ -544,6 +540,15 @@ h3 { font-size: 1.3rem; }
 
 .service__details .service__highlight {
   margin-top: 0;
+}
+
+/* Formazione: 3 colonne + highlight full-width sotto */
+#formazione .service__details {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#formazione .service__highlight {
+  grid-column: 1 / -1;
 }
 
 .service__cta {
@@ -872,7 +877,8 @@ h3 { font-size: 1.3rem; }
     grid-template-columns: 1fr;
   }
 
-  .service__details {
+  .service__details,
+  #formazione .service__details {
     grid-template-columns: 1fr;
   }
 
